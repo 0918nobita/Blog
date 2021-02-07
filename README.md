@@ -1,24 +1,12 @@
-# README
+# blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Railsガイドを読みながら作っているブログ
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- ``log/``:  アプリケーションのログファイルが置かれる
+- ``public/``: 静的ファイルやアセットが置かれる
+- ``Rakefile``: コマンドラインから実行できるタスクの定義
+    - 独自のRakeタスクを定義したい場合は、なるべく ``Rakefile`` ではなく ``lib/tasks`` 内で定義すべき
+- `storage/`: Diskサービスで用いるActive Storageファイルが置かれる
+- `tmp/`: キャッシュ・PIDなどの一時ファイルが置かれる
+- `vendor/`: サードパーティ製のコードが置かれる
+    - 通常のRailsアプリケーションの場合、外部gemをここに置く
